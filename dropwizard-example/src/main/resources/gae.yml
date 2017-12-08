@@ -1,0 +1,5 @@
+server:
+  type: bridge
+  applicationContextPath: /chockview
+  servletsMappedFromRootContext:
+    - assets
