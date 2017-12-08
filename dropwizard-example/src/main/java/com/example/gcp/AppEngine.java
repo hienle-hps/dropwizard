@@ -7,7 +7,6 @@ import com.example.helloworld.HelloWorldConfiguration;
 
 import be.fluid_it.tools.dropwizard.box.WebApplication;
 
-@WebListener
 public class AppEngine extends WebApplication<HelloWorldConfiguration> {
 
 	public AppEngine() {
