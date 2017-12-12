@@ -36,6 +36,10 @@ dependencies {
     )
 }
 
+configurations {
+	compile.exclude group: "org.slf4j", module: "jul-to-slf4j"
+}
+
 task run(type: JavaExec) {
     classpath += sourceSets.main.runtimeClasspath
     main = 'com.example.helloworld.HelloWorldApplication'

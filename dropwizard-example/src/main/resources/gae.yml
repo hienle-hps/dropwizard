@@ -3,3 +3,7 @@ server:
   applicationContextPath: /chockview
   servletsMappedFromRootContext:
     - assets
+
+logging:
+  appenders:
+    - type: gaeconsole
