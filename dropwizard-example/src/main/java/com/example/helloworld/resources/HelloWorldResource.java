@@ -35,7 +35,7 @@ public class HelloWorldResource {
     public Saying sayHello(@QueryParam("name") Optional<String> name) {
     	System.out.println("goes to stdout");
     	System.err.println("goes to stderr");
-    	LOGGER.info("goes to log");
+    	LOGGER.error("goes to log");
         return new Saying(counter.incrementAndGet(), String.format("Hello %s", name));
     }
 }
